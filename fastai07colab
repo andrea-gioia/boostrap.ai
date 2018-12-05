@@ -20,6 +20,6 @@ if [ ! -d course-v3 ]; then
 fi
 
 pip install dataclasses
-pip install fastai==0.7.2
+pip install fastai==0.7.0
 cd fastai
-git checkout tags/v0.7.2
+git checkout tags/0.7.0
