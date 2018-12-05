@@ -4,8 +4,8 @@ if [ ! -d fastai ]; then
         pip install pillow==4.2.1 --upgrade
         #pip install torch_nightly -f https://download.pytorch.org/whl/nightly/cu92/torch_nightly.html --upgrade
         pip install torch<0.4
-        pip torchtext=0.2.3
-        pip torchvision=0.2.0
+        pip torchtext==0.2.3
+        pip torchvision==0.2.0
 
         sed -n -e '/^tmpfs \/dev\/shm tmpfs defaults,size=/!p' -e '$atmpfs \/dev\/shm tmpfs defaults,size=1g 0 0' -i /etc/fstab
         mount -o remount /dev/shm
