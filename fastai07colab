@@ -6,6 +6,7 @@ if [ ! -d fastai ]; then
         pip install torch<0.4
         pip install torchtext==0.2.3
         pip install torchvision==0.2.0
+        pip install pandas==0.20.3
 
         sed -n -e '/^tmpfs \/dev\/shm tmpfs defaults,size=/!p' -e '$atmpfs \/dev\/shm tmpfs defaults,size=1g 0 0' -i /etc/fstab
         mount -o remount /dev/shm
